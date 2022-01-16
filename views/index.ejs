@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+   
+
+   <div class=buttonContainer>
+
+	<h1> Just a fancy button..</h1>
+    <form action="/open_male_page" method="get">
+      <a class="button" type="submit" id="my_form" onclick="this.closest('form').submit();return false;">  Male</a>
+
+    </form>
+</div>
+    
+<div class=buttonContainer>
+
+	
+	<form action="/open_female_page" method="get">
+        <a class="button" type="submit" id="my_form" onclick="this.closest('form').submit();return false;">  Female</a>
+  
+      </form>
+</div>
+<script>
+
+function fun()
+{
+    document.getElementById("my_form").submit();
+} 
+
+</script>
+</body>
+
+</html>
